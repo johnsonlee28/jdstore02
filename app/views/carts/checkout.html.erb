@@ -26,6 +26,7 @@
           </tr>
         <% end %>
       </tbody>
+    </table>
       <div class="total clearfix">
         <span class="pull-right">
           总计 <%= render_cart_total_price(current_cart) %> CNY
@@ -38,7 +39,7 @@
 
       <div class="order-form">
 
-      <%= simple_form_for @orders do |f| %>
+      <%= simple_form_for @order do |f| %>
 
       <legend>订购人</legend>
       <div class="col-md-6">
