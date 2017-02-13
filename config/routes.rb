@@ -17,4 +17,6 @@ Rails.application.routes.draw do
       post :empty_cart
     end
   end
+
+  resources :cart_items
 end
