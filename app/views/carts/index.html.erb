@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
     <div class="empty_cart clearfix" style="text-decoration:underline" >
-      <%= link_to("清空购物车", empty_cart_cart_path(current_cart),method: :post,class:"pull-right") %>
+      <%= link_to("清空购物车", empty_cart_carts_path(current_cart),method: :delete,class:"pull-right") %>
     </div>
 
 <h2>购物车</h2>
@@ -63,7 +63,7 @@
    <hr>
 
    <div class="checkout clearfix">
-     <%= link_to("确认结账", "#", method: :post, class:"btn btn-danger btn-lg") %>
+     <%= link_to("确认结账", checkout_carts_path, method: :post, class:"btn btn-danger btn-lg") %>
    </div>
  </div>
  </div>

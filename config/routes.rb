@@ -13,8 +13,9 @@ Rails.application.routes.draw do
   end
 
   resources :carts do
-    member do
-      post :empty_cart
+    collection do
+      delete :empty_cart
+      post :checkout
     end
   end
 
